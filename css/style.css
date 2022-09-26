@@ -6,11 +6,22 @@
 
 body{
 background-color: white;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+  padding: 30px;
+  font-size: 1.5rem;
 }
 
 a{
   text-decoration: none;
 }
+
+a:visited{
+  text-decoration: none;
+  color: inherit;
+  }
 
 ul{
   list-style: none;
@@ -20,10 +31,19 @@ img {
   max-width: 100%;
 }
 
+button{
+  color: white;
+  padding: 8px 45px;
+  font-size: 1rem;
+  border-radius: 40px;
+  text-decoration: none;
+  border: none;
+}
+
 .container{
   width: 480px;
   margin: 0 auto;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 .row {
@@ -40,9 +60,18 @@ img {
   margin-bottom: 30px;
 }
 
+.card{
+  border-radius: 20px;
+  padding: 30px;
+}
+
+/* TEXT */
+
 .text-center {
   text-align: center;
 }
+
+/* HEADER */
 
 header{
   width: 100%;
@@ -69,7 +98,41 @@ header img{
   padding: 10px 30px;
 }
 
+/* DEMO SECTION */
+
+.demo .col {
+  width: 90%;
+}
+
 .demo .col img {
-  height: 270px;
-  margin-bottom: 1rem;
+  align-items: center;
+  /* justify-content: end;
+  position: relative;
+  bottom: 0; */
+}
+
+.demo .card{
+  background-color: #B5DDFF;
+  padding-bottom: 0;
+}
+
+.demo .row .col:first-child p{
+  text-align: left;
+}
+
+.demo h3{
+  color: #007DFC;
+}
+
+.demo p{
+  color: #546776;
+}
+
+.demo button{
+  background-color: #007DFC;
+  margin: 30px;
+}
+
+.demo button i{
+  padding-right: 10px;
 }
