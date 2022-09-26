@@ -5,10 +5,15 @@
 }
 
 body{
-background-color: white;
-font-family: Arial, Helvetica, sans-serif;
-font-weight: bold;
-line-height: 30px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+h2{
+  padding: 30px 0;
+  font-size: 2rem;
 }
 
 h3{
@@ -16,9 +21,10 @@ h3{
   font-size: 1.2rem;
 }
 
-h2{
+h4{
   padding: 30px 0;
-  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
 }
 
 a{
@@ -58,11 +64,15 @@ button{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin-top: 50px;
+  padding: 40px 0;
 }
 
 .col {
   margin-bottom: 25px;
+}
+
+.demo .col, .planning .col, .testimonials .col, .benefits .col {
+  width: 80%;
 }
 
 .card{
@@ -104,10 +114,6 @@ header img{
 }
 
 /* DEMO SECTION */
-
-.demo .col {
-  width: 80%;
-}
 
 .demo .col img {
   align-items: center;
@@ -172,10 +178,6 @@ header img{
   height: 70%;
 }
 
-.planning .col {
-  width: 80%;
-}
-
 .planning .card.second{
   background-color: white;
   color: black;
@@ -192,4 +194,56 @@ header img{
   color: black;
   padding: 15px 20px;
   border-radius: 50%;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials h2{
+ color: #9692E4;
+ margin: 0;
+ padding-top: 0;
+}
+
+.testimonials h4{
+  font-weight: bold;
+  padding-bottom: 0;
+}
+
+.testimonials p, q{
+  font-weight: lighter;
+}
+
+.testimonials .card.colored{
+  background-color: #9692E4;
+  color: white;
+}
+
+.testimonials img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+blockquote {
+  border:none;
+  margin-bottom:5px;
+  /* display: block; */
+  /* margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 10px; */
+  }
+
+blockquote p:before { 
+  content: open-quote;
+  font-weight: bold;
+  font-size:30px;
+  color:white;
+} 
+blockquote p:after { 
+  content: close-quote;
+  font-weight: bold;
+  font-size:30px;
+  color:#white;
 }
