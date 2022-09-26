@@ -62,6 +62,7 @@ button i{
   width: 100%;
   margin: 0 auto;
 }
+
 .flex{
   display: flex;
 }
@@ -83,7 +84,7 @@ button i{
 
 .card{
   border-radius: 30px;
-  padding: 30px 0;
+  padding: 30px 10px;
 }
 
 /* TEXT */
@@ -132,11 +133,8 @@ header img{
   background-color: #B5DDFF;
 }
 
-.demo .col:first-child .card{
+.demo .col.one .card{
   padding-bottom: 0;
-}
-
-.demo .row .col:first-child p{
   text-align: left;
 }
 
@@ -150,7 +148,8 @@ header img{
 
 .demo button{
   background-color: #007DFC;
-  margin: 30px;
+  margin: 30px 0;
+  padding: 8px 30px;
 }
 
 .demo .card i{
@@ -320,11 +319,6 @@ blockquote p:after {
 /* RESPONSIVE */
 
 @media screen and (min-width: 481px) and (max-width:780px){
-  /* body{
-    width: 100%;
-    overflow-x:hidden
-  }
-   */
   .container {
     max-width: 780px;
     width: 100%;
@@ -342,6 +336,7 @@ blockquote p:after {
 
   .demo .col{
     padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .col.one{
@@ -413,4 +408,47 @@ blockquote p:after {
     width: calc(100vw / 3);
   }
 
+}
+
+@media screen and (min-width:1180px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .container {
+    min-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .demo .row{
+    flex-direction: row;
+    padding: 0 auto;
+  }
+
+  .demo .col{
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .col.one{
+    width: calc(100vw / 3 * 2);
+    text-align: left;
+  }
+
+  .card.one img{
+    width: 100%;
+  }
+
+  .col.two{
+    width: calc(100vw / 3);
+    height: 570px;
+  }
+
+  .col.bottom{
+    width: calc(100vw / 3);
+    margin: 10px;
+  }
+
+  
 }
