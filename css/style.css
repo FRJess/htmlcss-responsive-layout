@@ -46,17 +46,24 @@ img {
 
 button{
   color: white;
-  padding: 8px 45px;
+  padding: 8px 10px;
   font-size: 1rem;
   border-radius: 40px;
   text-decoration: none;
   border: none;
 }
 
+button i{
+  padding-right: 10px;
+}
+
 .container{
   max-width: 480px;
   width: 100%;
   margin: 0 auto;
+}
+.flex{
+  display: flex;
 }
 
 .row {
@@ -71,7 +78,7 @@ button{
   margin-bottom: 25px;
 }
 
-.demo .col, .planning .col, .testimonials .col, .benefits .col {
+.demo .col, .planning .col, .testimonials .col, .benefits .col, .about-us .col {
   width: 80%;
 }
 
@@ -147,10 +154,6 @@ header img{
   margin: 30px;
 }
 
-.demo button i{
-  padding-right: 10px;
-}
-
 .demo .card i{
   font-size: 4rem;
   color: #007DFC;
@@ -196,6 +199,10 @@ header img{
   border-radius: 50%;
 }
 
+.planning .card.second button i{
+padding: 0
+}
+
 /* TESTIMONIALS SECTION */
 
 .testimonials h2{
@@ -206,7 +213,7 @@ header img{
 
 .testimonials h4{
   font-weight: bold;
-  padding-bottom: 0;
+  padding-bottom: 20px;
 }
 
 .testimonials p, q{
@@ -252,6 +259,7 @@ blockquote p:after {
 
 .benefits h2{
   color: white;
+  padding: 60px;
 }
 
 .benefits .container{
@@ -283,3 +291,31 @@ blockquote p:after {
 
 /* ABOUT US SECTION */
 
+.about-us h2{
+  color: #9692E4;
+  font-size: 2.5rem;
+}
+
+
+.about-us p{
+  font-weight: normal;
+  line-height: 2.5rem;
+  padding: 10px 0;
+}
+
+.about-us img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-us h3{
+  color: #9692E4;
+  font-size: 1.5rem;
+}
+
+.about-us button{
+  background-color: #9692E4;
+  font-size: 0.8rem;
+}
