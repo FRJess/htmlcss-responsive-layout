@@ -247,3 +247,39 @@ blockquote p:after {
   font-size:30px;
   color:#white;
 }
+
+/* BENEFITS SECTION */
+
+.benefits h2{
+  color: white;
+}
+
+.benefits .container{
+  background-color: #9692E4;
+}
+
+.benefits .card{
+  background-color: white;
+  color: #9692E4;
+  text-align: left;
+}
+
+.benefits .number{
+  color: #9692E4;
+  font-size: 3rem;
+  padding: 0;
+}
+
+.benefits p{
+  color: #546776;
+  font-weight: lighter;
+}
+
+.benefits button{
+  background-color: #9692E4;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+/* ABOUT US SECTION */
+
