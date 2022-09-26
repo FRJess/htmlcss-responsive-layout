@@ -8,6 +8,14 @@ body{
 background-color: white;
 }
 
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -37,8 +45,28 @@ img {
 }
 
 header{
+  width: 100%;
   height: 74px;
   background-color: #0084FD;
+  /* display: flex; */
+}
+
+header .menu{
+  align-items: flex-end;
+  display: none;
+}
+
+header .menu ul{
+  list-style: none;
+  display: flex;
+}
+
+header .menu ul li{
+  margin: 0 15px;
+}
+
+header img{
+  padding: 10px 30px;
 }
 
 .demo .col img {
