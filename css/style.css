@@ -58,7 +58,6 @@ button i{
 }
 
 .container{
-  max-width: 480px;
   width: 100%;
   margin: 0 auto;
 }
@@ -95,25 +94,29 @@ button i{
 
 /* HEADER */
 
-header{
-  width: 100%;
-  height: 74px;
+header .container{
+  height: 80px;
+  max-width: 100%;
   background-color: #0084FD;
-  /* display: flex; */
-}
-
-header .menu{
-  align-items: flex-end;
-  display: none;
-}
-
-header .menu ul{
-  list-style: none;
+  justify-content: space-between;
   display: flex;
 }
 
-header .menu ul li{
+header .menu-desktop{
+  align-items: flex-end;
+  display: none;
+  padding: 10px 30px;
+}
+
+header .menu-desktop ul{
+  list-style: none;
+  display: flex;
+
+}
+
+header .menu-desktop ul li{
   margin: 0 15px;
+  color: white;
 }
 
 header img{
@@ -122,15 +125,19 @@ header img{
 
 /* DEMO SECTION */
 
+.demo .container{
+  flex-wrap: wrap;
+  display: flex;
+}
+
 .demo .col img {
   align-items: center;
-  /* justify-content: end;
-  position: relative;
-  bottom: 0; */
+  height: 30%;
 }
 
 .demo .card{
   background-color: #B5DDFF;
+  height: 500px;
 }
 
 .demo .col.one .card{
@@ -162,9 +169,6 @@ header img{
   color: white;
 }
 
-/* .demo .col:last-child{
-  margin-bottom: 80px;
-} */
 
 /* PLANNING SECTION */
 
@@ -173,6 +177,11 @@ header img{
   color: white;
   font-weight: normal;
   text-align: left;
+  flex-wrap: wrap;
+}
+
+.planning .container{
+  flex-wrap: wrap;
 }
 
 .planning img{
@@ -202,6 +211,11 @@ padding: 0
 }
 
 /* TESTIMONIALS SECTION */
+
+.testimonials .card{
+  flex-direction: column;
+  align-items: center;
+}
 
 .testimonials h2{
  color: #9692E4;
@@ -257,8 +271,9 @@ blockquote p:after {
   padding: 60px;
 }
 
-.benefits .container{
+.benefits{
   background-color: #9692E4;
+  width: 100%;
 }
 
 .benefits .card{
@@ -318,7 +333,7 @@ blockquote p:after {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 481px) and (max-width:780px){
+@media screen and (min-width: 768px){
   .container {
     max-width: 780px;
     width: 100%;
@@ -340,7 +355,7 @@ blockquote p:after {
   }
 
   .col.one{
-    width: calc(100vw / 3 * 2);
+    width: 66%;
     text-align: left;
   }
 
@@ -349,7 +364,7 @@ blockquote p:after {
   }
 
   .col.two{
-    width: calc(100vw / 3);
+    width: 33%;
     height: 570px;
   }
 
@@ -363,15 +378,8 @@ blockquote p:after {
   }
 
   .testimonials .card{
-    display: flex;
-  }
-
-  .testimonials .card p{
-    width: 100%;
-  }
-
-  .testimonials .card h4{
-    display: inline-block;
+    flex-direction: row;
+    padding: 10px 20px;
   }
 
   .benefits .row{
@@ -411,14 +419,18 @@ blockquote p:after {
 }
 
 @media screen and (min-width:1180px) {
-  body{
-    overflow-x: hidden;
-  }
-
   .container {
     min-width: 1180px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  header .menu-desktop{
+    display: block;
+  }
+
+  header .menu-mobile{
+    display: none;
   }
 
   .demo .row{
@@ -450,5 +462,15 @@ blockquote p:after {
     margin: 10px;
   }
 
-  
+  .planning .container{
+    flex-direction: row;
+  }
+
+  .planning .col{
+    width: 50%;
+  }
+
+  .benefits .col{
+    width: calc(80% / 3 );
+  }
 }
